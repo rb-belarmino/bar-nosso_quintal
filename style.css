@@ -23,15 +23,15 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 43;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: hsl(var(--hue) 98% 58%);
+  --base-color-second: hsl(var(--hue) 65% 22%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --body-color: rgb(0, 0, 0);
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  font: 400 1rem var(--body-font)
+  font: 400 1rem var(--body-font);
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
@@ -145,7 +145,7 @@ body {
 /*====  LOGO ============================ */
 
 .logo {
-  font: 700 1.31rem var(--title-font);
+  font: 700 3rem var(--title-font);
   color: var(--title-color);
 }
 
@@ -266,6 +266,10 @@ nav.show div.icon-close {
   overflow: hidden;
 }
 
+#home span{
+  color: var(--base-color);
+}
+
 #home .container {
   margin: 0;
 }
@@ -280,8 +284,8 @@ nav.show div.icon-close {
   width: 100%;
   background: var(--base-color-second);
   position: absolute;
-  top: -16.8%;
-  left: 16.7%;
+  top: -12.8%;
+  left: 10.7%;
   z-index: 0;
 }
 
@@ -310,8 +314,9 @@ nav.show div.icon-close {
 }
 
 /*====  ABOUT ============================ */
+
 #about {
-  background: white;
+  background: black;
 }
 
 #about .container {
@@ -374,9 +379,9 @@ nav.show div.icon-close {
 }
 
 /*====  TESTIMONIALS ============================ */
-
+/*
 #testimonials {
-  background: white;
+  background: black;
 }
 
 #testimonials .container {
@@ -425,8 +430,11 @@ nav.show div.icon-close {
   clip-path: circle();
   margin-right: 0.5rem;
 }
+*/
 
 /*swiper */
+
+/*
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
@@ -435,7 +443,7 @@ nav.show div.icon-close {
 .swiper-pagination-bullet-active {
   background: var(--base-color);
 }
-
+*/
 /*====  CONTACT ============================ */
 
 #contact .grid {
@@ -544,13 +552,7 @@ footer .social a:hover {
     padding: 10rem 0;
   }
 
-  .section header,
-  #testimonials header {
-    max-width: 32rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 
   .button {
     height: 3.125rem;
